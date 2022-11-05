@@ -22,20 +22,60 @@
       text-decoration: none;
       color: black;
   }
-  
   .card{
       display: flex;
       flex-wrap: wrap;
       margin: 20pt;
   }
+.bcgrnd1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30pt;
+    height: 300pt;
+
+}
+ .card1{
+    display: flex;
+    flex-direction: column;
+    margin: 20pt;
+    width: 20%;
+   border: solid 1pt #afacac;
+ }
+.card1>a{
+    text-decoration: none;
+    color: black;
+}
   footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     position: fixed;
     bottom: 0;
-    //text-align: center;
+/*     text-align: center; */
     border-top: solid 1px;
-  background: rgba(150, 150, 150, 0.5);
-  height: 14%;
-  padding-top: 10px;
-  left: 0;
+    background: rgba(230, 230, 230, 0.9);
+    height: 14%;
+    padding: 20px;
+    padding-top: 10px;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
   }
+
+.madeby{
+  text-align: left;
+}
+
+.social-icons{
+  text-align: center;
+  font-size: 2em;
+  margin-right: 20px;
+/*   height: 40%; */
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
