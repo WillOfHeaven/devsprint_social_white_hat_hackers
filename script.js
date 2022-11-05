@@ -23,10 +23,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
         items.push(...JSON.parse(jsonItem).items);
     }
 
-    document.addEventListener('dblclick',(e)=> {
-        getItemsFromStorage();
-        
-    })
+    
 
     
 })

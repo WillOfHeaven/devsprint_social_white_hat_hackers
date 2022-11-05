@@ -1,0 +1,41 @@
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  .Cards_head{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content:space-evenly;
+      align-items: center;
+      height: 200pt;
+      width: 100%;
+  }
+  .payment_gate{
+      display:flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items: center;
+      width: 50pt
+  }
+  .payment_gate>a{
+      text-decoration: none;
+      color: black;
+  }
+  
+  .card{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20pt;
+  }
+  footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    border-top: solid 1px;
+  background: rgba(150, 150, 150, 0.5);
+  height: 14%;
+  padding-top: 10px;
+  left: 0;
+  }
