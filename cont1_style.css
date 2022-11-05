@@ -32,7 +32,7 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    text-align: center;
+    //text-align: center;
     border-top: solid 1px;
   background: rgba(150, 150, 150, 0.5);
   height: 14%;
