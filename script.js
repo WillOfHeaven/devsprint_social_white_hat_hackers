@@ -11,19 +11,17 @@ document.addEventListener('DOMContentLoaded', (e) => {
         }
     }
     //A array which stores items;
-    const items = [];
+    let items = [];
     function addItemsToStorage(item) {
         items.push(item);
         let jsonItem = JSON.stringify({items: items});
-        localStorage.setItem(boxName, items);
+        localStorage.setItem(boxName, jsonItem);
     }
 
     function getItemsFromStorage() {
         let jsonItem = localStorage.getItem(boxName);
-        items.push(...JSON.parse(jsonItem).items);
+        let obj = JSON.parse(jsonItem);
+        items = obj.items;
     }
-
-    
-
     
 })
