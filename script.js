@@ -30,9 +30,19 @@ document.addEventListener('DOMContentLoaded', (e) => {
     count.innerText = `${items.length - 0} items`;
   }
 
+  function loadCartItem() {
+    
+    let modelBody = document.getElementsByClassName('modal-body')[0].firstElementChild;
+      if(items.length == 0)
+          modelBody.innerText = "Your list of items is empty."
+  }
+
   getItemsFromStorage();
   updateCount();
 
-  d
+  let cartBtn = document.getElementById('cartBtn');
+  cartBtn.addEventListener("click",(e)=> loadCartItem());
+
+
 
 })
