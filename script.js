@@ -33,4 +33,6 @@ document.addEventListener('DOMContentLoaded', (e) => {
   getItemsFromStorage();
   updateCount();
 
+  d
+
 })

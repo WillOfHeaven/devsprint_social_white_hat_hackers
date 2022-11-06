@@ -33,14 +33,18 @@
     flex-wrap: wrap;
     margin: 30pt;
     height: 300pt;
-
+    justify-content: center;
+    align-content: center;
 }
+
  .card1{
+    padding: ;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin: 20pt;
-    width: 20%;
-   border: solid 1pt #afacac;
+    width: 100%;
  }
 .card1>a{
     text-decoration: none;
@@ -72,7 +76,6 @@
   text-align: center;
   font-size: 2em;
   margin-right: 20px;
-/*   height: 40%; */
   position: absolute;
   right: 0;
   display: flex;
