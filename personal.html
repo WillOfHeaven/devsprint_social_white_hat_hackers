@@ -5,26 +5,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Care Products</title>
+  <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/aa8192111f.js" crossorigin="anonymous"></script>
-  
   <link rel="stylesheet" href="cont1_style.css">
   <script src="script.js"></script>
-  <title>Rename this</title>
+  <title>PersonalCare</title>
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-  <!--   This is For the navigation bar -->
+
+
+   <!-- nav bar -->
+
+
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">EasyRetail</a>
+      <a class="navbar-brand" href="index.html">EasyRetail</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,20 +36,26 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html" data-bs-toggle="modal"
+              data-bs-target="#model">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Cart</a>
+            <button type="button" class="btn btn-link nav-link" data-bs-toggle="modal" data-bs-target="#modal"
+              id="cartBtn">
+              Cart
+            </button>
+
+            <!--             <a class="nav-link" href="#" id="cartBtn">Cart</a> -->
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Categories
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="kitchen.html">Food</a></li>
+              <li><a class="dropdown-item" href="kitchen1.html">Food</a></li>
               <li><a class="dropdown-item" href="personal.html">Personal Care</a></li>
               <li><a class="dropdown-item" href="sweet.html">Sweets</a></li>
-              <li><a class="dropdown-item" href="office.html">Stationeries</a></li>
+              <li><a class="dropdown-item" href="office1.html">Stationeries</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -62,64 +72,74 @@
       </div>
     </div>
   </nav>
-  <!--   This is the cards -->
 
-  <div class="bcgrnd1">
-    <!--     Card 1 -->
-    <div class="card1" style="width: 25%;">
-      <a href="#"><img src="#" alt="Respective Image" id="item1">
-        <div class="item_name">
-          <p style="text-align: center">NAME OF ITEM</p>
+  <main>
+    <section class="Cards_head">
+
+
+      <!-- cards -->
+      <div class="card" style="width: 18rem;">
+        <img src="Images2/grooming-min.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Men's Grooming </h5>
+          <p class="card-text">Grooming is the secret of real elegance. ...</p>
+          <a href="kitchen1.html" class="btn btn-primary">Explore</a>
         </div>
-    </div></a>
-
-
-    <div class="card1" style="width: 25%;">
-      <a href="#"><img src="#" alt="Respective Image" id="item1">
-        <div class="item_name">
-          <p style="text-align: center">NAME OF ITEM</p>
+      </div>
+      <!-- cards -->
+      <div class="card" style="width: 18rem;">
+        <img src="Images2/hygiene-min.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Personal Hygiene</h5>
+          <p class="card-text">Hygiene is two third's of health !</p>
+          <a href="personal.html" class="btn btn-primary">Explore</a>
         </div>
-      </a>
+      </div>
+
+
+      <!-- cards -->
+      <div class="card" style="width: 18rem;">
+        <img src="Images2/charisse-kenion-3bdSGpKVAmk-unsplash.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Beauty Product's</h5>
+          <p class="card-text">Self care is the best gift that you can give yourself !</p>
+          <a href="sweet.html" class="btn btn-primary">Explore</a>
+        </div>
+      </div>
+    </section>
+    <div class="text" style="height: 700pt">
+    </div
+    <!--   footer -->
+    <footer>
+      <div class="madeby">Built with Love <i class="fa-regular fa-heart"></i> </br>By Social White Hat Hackers</div>
+      <div class="social-icons">
+        <a href="https://github.com/sauravk000/devsprint_social_white_hat_hackers">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+    </footer>
+  </main>
+
+  <!--  Modal -->
+  <div class="modal" id="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cart Items</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+        </div>
+      </div>
     </div>
-
-
-    <div class="card1" style="width: 25%;">
-      <a href="#"><img src="#" alt="Respective Image" id="item1">
-        <div class="item_name">
-          <p style="text-align: center">NAME OF ITEM</p>
-        </div>
-      </a>
-    </div>
-
-
-    <div class="card1" style="width: 25%;">
-      <a href="#"><img src="#" alt="Respective Image" id="item1">
-        <div class="item_name">
-          <p style="text-align: center">NAME OF ITEM</p>
-        </div>
-      </a>
-    </div>
-
-
-    <div class="card1" style="width: 25%;">
-      <a href="#"><img src="#" alt="Respective Image" id="item1">
-        <div class="item_name">
-          <p style="text-align: center">NAME OF ITEM</p>
-        </div>
-      </a>
-    </div>
-
-
-    <div class="card1" style="width: 25%;">
-      <a href="#"><img src="#" alt="Respective Image" id="item1">
-        <div class="item_name">
-          <p style="text-align: center">NAME OF ITEM</p>
-        </div>
-      </a>
-    </div>
-
-
   </div>
+
+
 </body>
 
 </html>

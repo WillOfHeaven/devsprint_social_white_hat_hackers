@@ -31,17 +31,30 @@ document.addEventListener('DOMContentLoaded', (e) => {
   }
 
   function loadCartItem() {
-    
+
     let modelBody = document.getElementsByClassName('modal-body')[0].firstElementChild;
-      if(items.length == 0)
-          modelBody.innerText = "Your list of items is empty."
+    if (items.length == 0)
+      modelBody.innerText = "Your list of items is empty.";
+    else {
+      for (let x in items) {
+        let element = document.createElement('div');
+      //   div.innerHTML = `<div class="card" style="width: 18rem;">
+      //   <img src="Images2/" class="card-img-top" alt="...">
+      //   <div class="card-body">
+      //     <h5 class="card-title">Stationary</h5>
+      //     <p class="card-text">Papers,pen and all stationary goodies!!</p>
+      //     <a href="kitchen.html" class="btn btn-primary">Go somewhere</a>
+      //   </div>
+      // </div>`;
+      }
+    }
   }
 
   getItemsFromStorage();
   updateCount();
 
   let cartBtn = document.getElementById('cartBtn');
-  cartBtn.addEventListener("click",(e)=> loadCartItem());
+  cartBtn.addEventListener("click", (e) => loadCartItem());
 
 
 

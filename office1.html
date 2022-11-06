@@ -11,7 +11,7 @@
   <script src="https://kit.fontawesome.com/aa8192111f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="cont1_style.css">
   <script src="script.js"></script>
-  <title>Rename this</title>
+  <title>Home&Office</title>
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -36,20 +36,26 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html" data-bs-toggle="modal"
+              data-bs-target="#model">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="cartBtn">Cart</a>
+            <button type="button" class="btn btn-link nav-link" data-bs-toggle="modal" data-bs-target="#modal"
+              id="cartBtn">
+              Cart
+            </button>
+
+            <!--             <a class="nav-link" href="#" id="cartBtn">Cart</a> -->
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Categories
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="kitchen.html">Food</a></li>
+              <li><a class="dropdown-item" href="kitchen1.html">Food</a></li>
               <li><a class="dropdown-item" href="personal.html">Personal Care</a></li>
               <li><a class="dropdown-item" href="sweet.html">Sweets</a></li>
-              <li><a class="dropdown-item" href="office.html">Stationeries</a></li>
+              <li><a class="dropdown-item" href="office1.html">Stationeries</a></li>
               <li>
                 <hr class="dropdown-divider">
               </li>
@@ -67,51 +73,25 @@
     </div>
   </nav>
 
-  <main>
     <section class="Cards_head">
 
 
       <!-- cards -->
       <div class="card" style="width: 18rem;">
-        <img src="cardimg/kitchen.png" class="card-img-top" alt="...">
+        <img src="Images2/stationary-min.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Kitchen Corner</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+          <h5 class="card-title">Stationary</h5>
+          <p class="card-text">Papers,pen and all stationary goodies!!</p>
           <a href="kitchen.html" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
-      <!-- cards -->
-      <div class="card" style="width: 18rem;">
-        <img src="cardimg/personalcare.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Personal Care</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="personal.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
 
       <!-- cards -->
       <div class="card" style="width: 18rem;">
-        <img src="cardimg/sweettooth.png" class="card-img-top" alt="...">
+        <img src="Images2/computer-min.png" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">Sweet Tooth</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-          <a href="sweet.html" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-
-
-      <!-- cards -->
-      <div class="card" style="width: 18rem;">
-        <img src="cardimg/office.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Home & Office</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
+          <h5 class="card-title">Digital Section</h5>
+          <p class="card-text">Laptops and various Computer appliances</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>

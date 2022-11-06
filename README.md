@@ -1,6 +1,10 @@
-# devsprint_social_white_hat_hackers
+# EasyRetail
 
 Problem Statement: Enabling Common and mentally disabled people to make better decisions and easier payments specific to Retail Store Experience
+
+
+Track - sustainability
+
 
 [Soumyajit Kolay](https://github.com/c43-sar) \
 [Saurav Kumar](https://guthub.com/sauravk000) \
